@@ -1,35 +1,33 @@
 # Why do we use useContext Hook??
-   Suppose we have multiple nested components and from the top most parent component we want a state to be passed on to the last component. (We have to do prop drilling) but passing unwanted components just to do prop drilling on component which do not actually need them is kind of useless. 
-   HERE WE CAN USE useContext HOOK!!
+
+Suppose we have multiple nested components and from the top most parent component we want a state to be passed on to the last component. (We have to do prop drilling) but passing unwanted components just to do prop drilling on component which do not actually need them is kind of useless.
+HERE WE CAN USE useContext HOOK!!
 
 # Context API:
-    The Context API is a state management feature in React that lets you pass data deeply through the component tree without having to pass props down manually at every level.
-    It includes:
 
-    - React.createContext()
+The Context API is a state management feature in React that lets you pass data deeply through the component tree without having to pass props down manually at every level.
+It includes:
 
-    - Context.Provider
+- React.createContext()
 
-    - Context.Consumer (older, less used now)
+- Context.Provider
 
-    - useContext() (React Hook to consume context)
+- Context.Consumer (older, less used now)
 
+- useContext() (React Hook to consume context)
 
 # How to use ContextApi:
 
-    - Create a folder named :- { context }
+- Create a folder named :- { context }
 
-    - Inside the folder create a {JS_file :- context.js}
-        - Visit the file
+- Inside the folder create a {JS_file :- context.js}
 
-## In main file: 
+- Visit the file
 
-    - Import the exported context from {JS_file :- context.js}.... (Here CounterContext.provider)
+## In main file:
 
-    - Wrap the app in <CounterContext.provider value={value}>... This will make the value available to all the code and child component inside it...
+- Import the exported context from {JS_file :- context.js}.... (Here CounterContext.provider)
 
-    - Now accept the value in the child you want
+- Wrap the app in <CounterContext.provider value={value}>... This will make the value available to all the code and child component inside it...
 
-
-
-    
+- Now accept the value in the child you want
